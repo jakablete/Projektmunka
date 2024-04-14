@@ -1,0 +1,231 @@
+@import "_global.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_variables.scss";
+
+//General
+    html {
+        font-size: 62.5%;
+    }
+
+    body{
+        font-family: "Montserrat", sans-serif;
+        font-size: $text-m;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $section-padding-y $section-padding-x;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 1366px;
+    }
+
+    p{
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width:1100px;
+    }
+//Dividers
+    .divider-on-top {
+        padding-top: $space-s;
+        border-top: 5px solid $primary;
+    }
+    .divider-on-left {
+        padding-left: $space-s;
+        border-left: 5px solid $primary;
+    }
+    .divider-on-bottom {
+        padding-bottom: $space-s;
+        border-bottom: 5px solid $primary;
+    }
+    .divider-on-right {
+        padding-right: $space-s;
+        border-right: 5px solid $primary;
+    }
+//Headings
+    h1 {
+        font-size: $h1;
+    }
+
+    h2 {
+        font-size: $h2;    
+    }
+
+    h3 {
+        font-size: $h3;
+    }
+
+    h4 {
+        font-size: $h4;
+    }
+
+    h5 {
+        font-size: $h5;
+    }
+
+    h6 {
+        font-size: $h6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+//Cards Element
+    .cards__wrapper{
+        display: grid;
+        grid-template-columns: $grid-3;
+        gap: $content-gap;
+        
+        .card {
+            display: grid;
+            grid-template-rows: 1fr 1.75fr;
+            padding: $space-s;
+            border: 2.5px solid $primary;
+            border-radius: $radius-l;
+
+            .card__headline{
+                text-align: left;
+            }
+            .card__text{
+                text-align: left;
+            }
+        }
+    }
+
+    .card__header-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: $content-gap;
+
+        .card__header{
+            display: flex;
+            flex-direction: column;
+            row-gap: 0;
+        }
+
+        .vertical-divider{
+            order: -1;
+            height: 100%;
+        }
+    }
+
+//Landing Page
+    //General Styling goes here
+    //Hero Section
+    .hero__wrapper {
+        display: grid;
+        grid-template-columns: $grid-2;
+        gap: $grid-gap;
+
+        .hero__content-wrapper{
+            display: flex;
+            flex-direction: column;
+            row-gap: $content-gap;
+
+            .horizontal-divider {
+                display: flex;
+                order: -1;
+            }
+            .hero__buttons-wrapper {
+                display: flex;
+                flex-direction: row;
+                column-gap: $content-gap;
+            }
+            .hero__social-wrapper {
+                .hero__social-icon{
+                    font-size: $text-l;
+                    color: $primary;
+                }
+            }
+        }
+        .hero__image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .hero__image {
+                width: 75%;
+            }
+        }
+    }
+    //Services Section
+    .services__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: $grid-gap;
+
+        .services__content-wrapper{
+            display: flex;
+            flex-direction: column;
+            row-gap: $content-gap;
+
+            .services__headline-wrapper {
+                display: flex;
+                flex-direction: row;
+                column-gap: $content-gap;
+                align-items: center;
+            }
+
+        }
+        
+    }
+    //Prices Section
+    .prices__wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: $grid-gap;
+        .prices__content-wrapper{
+            display: flex;
+            flex-direction: column;
+            row-gap: $content-gap;
+
+            .prices__headline-wrapper {
+                display: flex;
+                flex-direction: row;
+                column-gap: $content-gap;
+                align-items: center;
+            }
+        }
+
+        .cards__wrapper {
+            order: -1;
+            .card {
+                row-gap: $content-gap;
+                .card__button-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .primary__button{
+                        width: 75%;
+                    }
+                }
+            }
+        }
+        
+    }
+    //At tablet breakpoint do something
+    @media (max-width: 991px){
+
+    };
+
+    //At phone landscape do something
+    @media (max-width: 768px){
+        
+    };
+
+    //At phone portrait do something
+    @media (max-width: 480px){
+
+    };

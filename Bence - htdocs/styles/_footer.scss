@@ -1,0 +1,70 @@
+@import "_variables.scss";
+//General Styling goes here
+
+footer{
+    background-color: $primary;
+    color: white;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: $grid-gap;
+
+    .footer__content{
+        h4 {
+            color: white;
+            margin-bottom: $space-s;
+        }
+        li {
+            margin-bottom: $space-xs;
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                display: block;
+                color: $grey;
+                font-size: $text-s;
+                font-weight: 400;
+                transition: all .40s ease;
+            }
+            a:hover{
+                transform: translateY(-3px) translateX(-5px);
+                color: white;
+            }
+        }
+        p {
+            color: $grey;
+            font-size: $text-m;
+            line-height: 30px;
+            margin: 2rem 0rem;
+        }
+        .footer__icons {
+            a{
+                display: inline-block;
+                font-size: $text-l;
+                color: $grey;
+                margin-right: $space-xs;
+                transition: all .40s ease;
+            }
+            a:hover{
+                color: white;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+//At tablet breakpoint do something
+@media (max-width: 991px){
+    
+};
+
+//At phone landscape do something
+@media (max-width: 768px){
+    
+};
+
+//At phone portrait do something
+@media (max-width: 480px){
+    
+};
