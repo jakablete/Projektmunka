@@ -1,0 +1,97 @@
+//Global Variables  
+    //Breakpoints
+        $tablet: 991px;
+        $phone-landscape: 767px;
+        $phone-portrait: 478px;
+        
+    //Color Variables
+        $grey: #d6d6d6;
+
+        $white-h: 100;
+        $white-s: 100%;
+        $white-l: 100%;
+        $white-hsl: $white-h $white-s $white-l;
+        $white: hsl($white-hsl);
+
+        $primary-h: 216;
+        $primary-s: 100%;
+        $primary-l: 50%;
+        $primary-hsl: $primary-h $primary-s $primary-l;
+        $primary: hsl($primary-hsl);
+
+        $black-h: 0;
+        $black-s: 0%;
+        $black-l: 0%;
+        $black-hsl: $black-h $black-s $black-l;
+        $black: hsl($black-hsl);
+
+    //Spacing Variables
+        $space-xxs: clamp(0.59259259259rem, 0.397vw + 0.466rem, 1.0074074074rem);
+        $space-xs: clamp(0.8888888889rem, calc(0.4861111111vw + 0.7333333333rem), 1.5111111111rem);
+        $space-s: clamp(1.3333333333rem, calc(0.7291666667vw + 1.1rem), 2.2666666667rem);
+        $space-m: clamp(2rem, calc(1.09375vw + 1.65rem), 3.4rem);
+        $space-l: clamp(2.666rem, calc(1.9015625vw + 2.0575rem), 5.1rem);
+        $space-xl: clamp(3.553778rem, calc(3.2001734375vw + 2.5297225rem), 7.65rem);
+        $space-xxl: clamp(4.737186074rem, calc(5.2639171297vw + 3.0527325925rem), 11.475rem);
+
+        $content-gap: $space-s;
+        $container-gap: $space-xl;
+        $grid-gap: $space-l;
+
+        $section-space-xs: clamp(1.3333333333rem, calc(2.5vw + 0.5333333333rem), 4.5333333333rem);
+        $section-space-s: clamp(2rem, calc(3.75vw + 0.8rem), 6.8rem);
+        $section-space-m: clamp(3rem, calc(5.625vw + 1.2rem), 10.2rem);
+        $section-space-l: clamp(3.999rem, calc(8.82890625vw + 1.17375rem), 15.3rem);
+        $section-space-xl: clamp(5.330667rem, calc(13.7651039063vw + 0.92583375rem), 22.95rem);
+        $section-space-xxl: clamp(7.105779111rem, calc(21.3431413195vw + 0.2759738887rem), 34.425rem);
+        $section-padding-x: clamp(1.6rem, calc(5vw + 0rem), 8rem);
+        $section-padding-y: $space-m;
+        $section-padding-x: $space-m;
+
+    // CSS Grid Variables
+        $grid-1: repeat(1, minmax(0, 1fr));
+        $grid-2: repeat(2, minmax(0, 1fr));
+        $grid-3: repeat(3, minmax(0, 1fr));
+        $grid-4: repeat(4, minmax(0, 1fr));
+        $grid-5: repeat(5, minmax(0, 1fr));
+        $grid-6: repeat(6, minmax(0, 1fr));
+        $grid-7: repeat(7, minmax(0, 1fr));
+        $grid-8: repeat(8, minmax(0, 1fr));
+        $grid-9: repeat(9, minmax(0, 1fr));
+        $grid-10: repeat(10, minmax(0, 1fr));
+        $grid-11: repeat(11, minmax(0, 1fr));
+        $grid-12: repeat(12, minmax(0, 1fr));
+        $grid-1-2: minmax(0, 1fr) minmax(0, 2fr);
+        $grid-1-3: minmax(0, 1fr) minmax(0, 3fr);
+        $grid-2-1: minmax(0, 2fr) minmax(0, 1fr);
+        $grid-2-3: minmax(0, 2fr) minmax(0, 3fr);
+        $grid-3-1: minmax(0, 3fr) minmax(0, 1fr);
+        $grid-3-2: minmax(0, 3fr) minmax(0, 2fr);
+        $grid-auto-2: repeat(auto-fit, minmax(min(51.237458194rem, 100vw - 6.8rem), 1fr));
+        $grid-auto-3: repeat(auto-fit, minmax(min(38.3959899749rem, 100vw - 6.8rem), 1fr));
+        $grid-auto-4: repeat(auto-fit, minmax(min(30.7014028056rem, 100vw - 6.8rem), 1fr));
+        $grid-auto-5: repeat(auto-fit, minmax(min(25.5759599332rem, 100vw - 6.8rem), 1fr));
+        $grid-auto-6: repeat(auto-fit, minmax(min(21.9170243205rem, 100vw - 6.8rem), 1fr));
+
+    //Border Variables
+        $radius-xs: 0.2666666667rem;
+        $radius-s: 0.4rem;
+        $radius-m: 0.6rem;
+        $radius-l: 0.9rem;
+        $radius-xl: 1.35rem;
+        $radius-xxl: 2.025rem;
+        $radius-50: 50%;
+
+    //Typography Variables
+        $text-xs: clamp(1.5rem, calc(0.078125vw + 1.475rem), 1.6rem);
+        $text-s: clamp(1.6rem, calc(0.15625vw + 1.55rem), 1.8rem);
+        $text-m: clamp(1.6rem, calc(0.3125vw + 1.5rem), 2rem);
+        $text-l: clamp(1.92rem, calc(0.5828125vw + 1.7335rem), 2.666rem);
+        $text-xl: clamp(2.304rem, calc(0.9763890625vw + 1.9915555rem), 3.553778rem);
+        $text-xxl: clamp(2.7648rem, calc(1.5409266203vw + 2.2717034815rem), 4.737186074rem);
+        $h6: clamp(1.3rem, calc(-0.0483445452vw + 1.3154702545rem), 1.2381189821rem);
+        $h5: clamp(1.4rem, calc(0.1956348462vw + 1.3373968492rem), 1.6504126032rem);
+        $h4: clamp(1.8rem, calc(0.3125vw + 1.7rem), 2.2rem);
+        $h3: clamp(2.16rem, calc(0.60359375vw + 1.96685rem), 2.9326rem);
+        $h2: clamp(2.592rem, calc(1.725vw + 2.04rem), 4.8rem);
+        $h1: clamp(3.1104rem, calc(2.2575vw + 2.388rem), 6rem);
