@@ -1,0 +1,135 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #e4e9f7;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/****** Navbar ******/
+.nav{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 100;
+    line-height: 70px;
+    
+}
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+}
+.rightside a{
+    padding: 0 10px;
+}
+/****** Navbar end ******/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-box{
+    background-color: lightblue;
+    min-height: 13rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    box-shadow: 0 0 100px 0 rgba(1, 45, 60),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.login-box header{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 25px;
+    font-weight: 500;
+}
+.input{
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 5%;
+    padding: 0 10px;
+}
+.input input{
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    padding: 0 10px;
+    border:1px solid #ccc;
+}
+.input i {
+    color: #555; /* Optional: change the icon color */
+}
+.submit-btn{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.submit-btn button{
+    width: 260px;
+    height: 35px;
+    border-radius: 5px;
+    background: rgba(2, 20, 86, 0.548);
+    border: 0;
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.submit-btn button:hover{
+    opacity: 0.7;
+}
+.bottom-content{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/****** test home ******/
+.box{
+    background-color: lightblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    box-shadow: 0 0 100px 0 rgba(1, 45, 60),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/****** end test home ******/
+
+.rightside a button{
+    background: lightblue;
+    border-radius: 10px;
+    height: 3rem;
+}
+
+.rightside a button:hover{
+    opacity: 0.7;
+}
+
+.error{
+    margin-left: 41%;
+}

@@ -1,0 +1,20 @@
+.card {
+    background-color: #f0f8ff;
+    margin-top: 40px;
+}
+
+.gallery-wrap .img-big-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Ha szükséges, állítsd be a kívánt magasságot */
+}
+
+.gallery-wrap .img-big-wrap img {
+    max-height: 100%;
+    margin: auto; /* Új: Középre igazítja a képet */
+    display: block; /* Új: Az inline elemeket blokká alakítja, hogy a margin: auto; működjön */
+}
+.blue {
+    color: #337ab7;
+}

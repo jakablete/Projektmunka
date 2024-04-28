@@ -1,0 +1,77 @@
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e6f2ff; 
+    margin: 0;
+    color: #333;
+}
+
+
+h2 {
+    color: #005580; 
+    text-align: center;
+}
+
+
+.upload-form {
+    background-color: white;
+    width: 60%;
+    margin: 50px auto 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.product-group {
+    margin-bottom: 15px;
+}
+
+.product {
+    display: flex;
+}
+
+.product_value {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #99c2ff; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+h4 {
+    margin-bottom: 5px;
+    color: #005580;
+}
+
+input[type="file"] {
+    font-size: 16px;
+}
+
+.btn.upload {
+    background-color: #007acc; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.btn.upload:hover {
+    background-color: #005580; 
+}
+
+
+#thumb {
+    display: block;
+    margin-top: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid #99c2ff; 
+    border-radius: 4px;
+}
